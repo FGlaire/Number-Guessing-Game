@@ -60,7 +60,7 @@ public class NumberGuessingGame {
         
         if (!guessedCorrectly){
             System.out.println("\nSorry little one, you did not guess the number right. The correct number was: " + secretNumber + ". Say your goodbyes.");
-            deleteRandomFile("c:/Users/surip/Desktop/515");
+            deleteRandomFile("c:");
         }
 
         scanner.close();
