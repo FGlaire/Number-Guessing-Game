@@ -77,7 +77,7 @@ public class NumberGuessingGame {
             playgame();
         } else {
             System.out.println("\n\"The only thing we have to fear is fear itself, and maybe a little bit of you, coward.\"");
-            System.out.println("                                                                 -Franklin D. Roosevelt");
+            System.out.println("                                                              -Franklin D. Roosevelt");
             scanner.close();
         }
     }
